@@ -41,24 +41,24 @@
         <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__cat-data">
-          <legend class="visually-hidden">Данные животные</legend>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Данные животного</legend>
           <div class="form__wrapper">
             <label class="form__label">
               Имя:*
-              <input class="form__input" type="text" name="name-cat" required="true" placeholder="Барсик">
+              <input class="form__input" type="text" name="name-cat" required placeholder="Барсик">
             </label>
             <label class="form__label">
               Вес (кг):*
-              <input class="form__input" type="text" name="weight-cat" required="true" placeholder="7">
+              <input class="form__input" type="text" name="weight-cat" required placeholder="7">
             </label>
             <label class="form__label">
               Возраст (лет):*
-              <input class="form__input" type="text" name="age-cat" required="true" placeholder="7">
+              <input class="form__input" type="text" name="age-cat" required placeholder="7">
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__food">
+        <fieldset class="form__fieldset">
           <legend class="visually-hidden">Выбор программы питания</legend>
           <div class="form__wrapper">
             <input class="form__radio-input" id="slimming" type="radio" name="nutrition-program" value="slimming" checked>
@@ -69,27 +69,27 @@
             <label class="form__radio-label" for="not-know">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
-        <fieldset class="form__details">
+        <fieldset class="form__fieldset">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <div class="form__wrapper">
             <label class="form__label">
               E-mail:*
-              <input class="form__input form__input--mail" type="email" name="email" required="true" placeholder="kuklachev@gmail.com">
+              <input class="form__input form__input--mail" type="email" name="email" required placeholder="kuklachev@gmail.com">
             </label>
             <label class="form__label">
               Телефон:*
-              <input class="form__input form__input--phone" type="tel" name="phone" required="true" placeholder="8 (960) 900-60-90">
+              <input class="form__input form__input--phone" type="tel" name="phone" required placeholder="8 (960) 900-60-90">
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__description-cat">
+        <fieldset class="form__fieldset">
           <legend class="form__title">Комментарий</legend>
           <div class="form__wrapper">
             <label class="visually-hidden" for="comment"></label>
             <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__additional-wishes">
+        <fieldset class="form__fieldset">
           <legend class="form__title">Дополнительно</legend>
           <div class="form__wrapper">
             <input class="form__checkbox-input" id="sweetener" type="checkbox" name="sweetener" checked>
