@@ -1,0 +1,22 @@
+.originality {
+  background-color: $dark-grey;
+}
+
+.originality__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.originality__title {
+  color: $basic-black;
+  font-weight: $font-weight;
+  font-size: $font-size-36;
+  line-height: $line-height-40;
+}
+
+.originality__item {
+  font-family: $font-family-arial;
+  color: $copiryght-grey;
+  font-size: $font-size-14;
+  line-height: $line-height-18;
+}

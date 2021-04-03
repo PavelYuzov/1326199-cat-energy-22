@@ -1,0 +1,32 @@
+.programs__item {
+  background-color: $basic-grey;
+}
+
+.programs__item-title {
+  color: $basic-black;
+  font-weight: $font-weight;
+  font-size: $font-size-24;
+  line-height: $line-height-37;
+  text-transform: uppercase;
+}
+
+.programs__item-text {
+  font-family: $font-family-arial;
+  color: $copiryght-grey;
+  font-size: $font-size-14;
+  line-height: $line-height-18;
+  text-align: $text-align-left;
+}
+
+.programs__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.programs__item-link {
+  text-decoration: none;
+  color: $basic-black;
+  text-transform: uppercase;
+  font-size: $font-size-16;
+  line-height: $line-height-16;
+}

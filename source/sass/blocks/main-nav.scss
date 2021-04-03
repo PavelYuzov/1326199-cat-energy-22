@@ -1,0 +1,22 @@
+.main-nav {
+  background-color: $basic-white;
+}
+
+.main-nav__buttom {
+  background-color: inherit;
+  list-style: none;
+  border: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-nav__item a {
+  color: $basic-black;
+  font-size: $font-size-20;
+  line-height: $line-height-20;
+  text-transform: uppercase;
+  text-decoration: none;
+}

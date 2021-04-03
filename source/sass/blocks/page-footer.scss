@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer__dealers {
+  background-color: $basic-white;
+}
+
+.page-footer__title {
+  color: $title-black;
+  text-transform: uppercase;
+  font-weight: $font-weight;
+  font-size: $font-size-16;
+  line-height: $line-height-18;
+}
+
+.page-footer__address {
+  font-family: $font-family-arial;
+  color: $copiryght-grey;
+  font-style: normal;
+  font-size: $font-size-14;
+  line-height: $line-height-20;
+}
+
+.page-footer__list {
+  list-style: none;
+}
+
+.page-footer__social-link {
+  fill: $social-grey;
+}
+
+.page-footer__link-academy-text {
+  color: $copiryght-grey;
+  text-decoration: none;
+  font-size: $font-size-16;
+  line-height: $line-height-18;
+}
