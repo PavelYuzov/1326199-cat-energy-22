@@ -1,13 +1,13 @@
 // Global
 
+@import "global/normalize.scss";
+@import "global/fonts.scss";
 @import "global/variable.scss";
 @import "global/global.scss";
-@import "global/fonts.scss";
 
 // Blocks
 
 @import "blocks/page.scss";
-@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/sentence.scss";
 @import "blocks/button.scss";
