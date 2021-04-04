@@ -1,0 +1,14 @@
+.sentence {
+  background-image: url("../img/content/background-picture-green.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
+.sentence__title {
+  color: $basic-white;
+}
+
+.sentence__text {
+  color: $basic-white;
+  text-transform: uppercase;
+}
