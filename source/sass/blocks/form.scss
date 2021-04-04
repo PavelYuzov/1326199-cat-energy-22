@@ -1,0 +1,71 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__label {
+  color: $copiryght-grey;
+  font-size: $font-size-16;
+  line-height: $line-height-18;
+  text-transform: uppercase;
+}
+
+.form__input {
+  border: 1px solid $placeholder-grey;
+
+  &::placeholder {
+    color: $copiryght-grey;
+    font-size: $font-size-16;
+    line-height: $line-height-18;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+.form__radio-label {
+  color: $label-radio-black;
+  font-size: $font-size-16;
+  line-height: $line-height-18;
+  text-transform: uppercase;
+}
+
+.form__title {
+  color: $basic-black;
+  font-size: $font-size-24;
+  line-height: $line-height-26;
+}
+
+.form__textarea {
+  border: 1px solid $placeholder-grey;
+
+  &::placeholder {
+    color: $copiryght-grey;
+    font-size: $font-size-16;
+    line-height: $line-height-18;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+.form__checkbox-label {
+  color: $basic-black;
+  font-size: $font-size-16;
+  line-height: $line-height-18;
+  text-transform: uppercase;
+}
+
+.form__button {
+  color: $basic-white;
+  background-color: $basic-green;
+  border: none;
+  font-size: $font-size-16;
+  line-height: $line-height-20;
+  text-transform: uppercase;
+}
+
+.form__text {
+  font-family: $font-family-arial;
+  color: $basic-black;
+  font-size: $font-size-14;
+  line-height: $line-height-16;
+}
