@@ -1,6 +1,14 @@
 .button {
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
   color: $basic-white;
   background-color: $basic-green;
+  font-size: $font-size-16;
+  line-height: $line-height-20;
+
+  &--more {
+    color: $copiryght-grey;
+    background-color: $basic-grey;
+  }
 }
