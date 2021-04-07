@@ -1,5 +1,28 @@
 .example {
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $dark-grey;
+  }
+}
+
+.example__wrapper {
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .example__title {
@@ -7,6 +30,16 @@
   font-weight: $font-weight;
   font-size: $font-size-36;
   line-height: $line-height-40;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-60;
+    line-height: $line-height-60;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-60;
+    line-height: $line-height-60;
+  }
 }
 
 .example__text {
@@ -14,11 +47,44 @@
   color: $copiryght-grey;
   font-size: $font-size-14;
   line-height: $line-height-18;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-16;
+    line-height: $line-height-24;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-14;
+    line-height: $line-height-18;
+  }
+}
+
+.example__wrapper-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .example__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 .example__item-title {
@@ -26,6 +92,16 @@
   font-weight: $font-weight;
   font-size: $font-size-24;
   line-height: $line-height-24;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-30;
+    line-height: $line-height-37;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-30;
+    line-height: $line-height-37;
+  }
 }
 
 .example__item-text {
@@ -33,12 +109,44 @@
   color: $copiryght-grey;
   font-size: $font-size-12;
   line-height: $line-height-12;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-14;
+    line-height: $line-height-14;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-30;
+    line-height: $line-height-37;
+  }
 }
 
 .example__expenses {
   color: $basic-black;
   font-size: $font-size-14;
   line-height: $line-height-20;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: $line-height-20;
+    width: 170px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-30;
+    line-height: $line-height-37;
+    width: 380px;
+  }
+}
+
+.example__slider {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $dark-grey;
+  }
 }
 
 .example__slider-button {

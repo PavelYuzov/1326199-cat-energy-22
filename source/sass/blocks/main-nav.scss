@@ -2,15 +2,31 @@
   background-color: $basic-white;
 }
 
-.main-nav__button {
-  background-color: inherit;
-  list-style: none;
-  border: none;
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item a {
