@@ -1,5 +1,10 @@
 .main-nav {
   background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-color: transparent;
+  }
 }
 
 .main-nav__wrapper {
@@ -35,4 +40,8 @@
   line-height: $line-height-20;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }

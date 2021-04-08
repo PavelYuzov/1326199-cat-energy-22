@@ -2,11 +2,9 @@
   background-color: $basic-grey;
 }
 
-.page-footer__wrapper {
+.page-footer__footer {
   width: 280px;
   padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -18,13 +16,32 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 .page-footer__dealers {
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.page-footer__wrapper {
+  background-color: $basic-white;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin-top: 100px;
+  }
 }
 
 .page-footer__title {
@@ -53,20 +70,16 @@
   line-height: $line-height-20;
 }
 
-.page-footer__map {
-  width: auto;
+.page-footer__map iframe {
+  width: 100%;
+  border: none;
 }
 
-.page-footer__logo {
-  margin: 0 auto;
+.page-footer__logo-wrapper {
+  text-align: center;
 }
 
-.page-footer__social .page-footer__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-footer__list {
+.page-footer__social-list {
   list-style: none;
   padding: 0;
   display: flex;
@@ -77,14 +90,14 @@
   fill: $social-grey;
 }
 
-.page-footer__link-academy-text {
+.page-footer__academy-text {
   color: $copiryght-grey;
-  text-decoration: none;
   font-size: $font-size-16;
   line-height: $line-height-18;
 }
 
-.page-footer__copyright {
+.page-footer__link-copyright {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }

@@ -10,6 +10,10 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+    }
   }
 }
 
@@ -28,6 +32,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
