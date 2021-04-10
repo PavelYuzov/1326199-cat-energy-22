@@ -25,8 +25,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    list-style: none;
-    padding-left: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -42,11 +40,6 @@
     font-size: $font-size-60;
     line-height: $line-height-60;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: $font-size-60;
-    line-height: $line-height-60;
-  }
 }
 
 .originality__item {
@@ -57,12 +50,6 @@
   margin-left: 80px;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-16;
-    line-height: $line-height-24;
-    margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: $font-size-16;
     line-height: $line-height-24;
     margin-left: 0;

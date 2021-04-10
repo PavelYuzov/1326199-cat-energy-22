@@ -66,12 +66,6 @@
     line-height: $line-height-60;
     width: 414px;
   }
-
-  @media (min-width: $desktop-width) {
-    color: $basic-black;
-    font-size: $font-size-60;
-    line-height: $line-height-60;
-  }
 }
 
 .sentence__text {
@@ -82,13 +76,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
-    font-weight: $font-weight;
-    font-size: $font-size-20;
-    line-height: $line-height-20;
-  }
-
-  @media (min-width: $desktop-width) {
     color: $basic-black;
     font-weight: $font-weight;
     font-size: $font-size-20;

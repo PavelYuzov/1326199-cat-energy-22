@@ -52,8 +52,6 @@
     width: 1220px;
     padding: 0 110px;
     background-color: $basic-white;
-    font-size: $font-size-60;
-    line-height: $line-height-60;
   }
 }
 
@@ -66,11 +64,6 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-16;
     line-height: $line-height-24;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: $font-size-14;
-    line-height: $line-height-18;
   }
 }
 
@@ -103,11 +96,6 @@
     font-size: $font-size-30;
     line-height: $line-height-37;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: $font-size-30;
-    line-height: $line-height-37;
-  }
 }
 
 .example__item-text {
@@ -117,11 +105,6 @@
   line-height: $line-height-12;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-14;
-    line-height: $line-height-14;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: $font-size-14;
     line-height: $line-height-14;
   }
@@ -155,9 +138,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $dark-grey;
     width: 50%;
   }
+}
+
+.example__slider-cat-fat {
+  width: 100%;
 }
 
 .example__slider-button {
