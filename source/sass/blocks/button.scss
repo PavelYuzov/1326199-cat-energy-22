@@ -11,4 +11,9 @@
     color: $copiryght-grey;
     background-color: $basic-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: $line-height-20;
+  }
 }

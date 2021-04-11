@@ -1,16 +1,28 @@
 .main-nav {
   background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-color: transparent;
+  }
 }
 
-.main-nav__button {
-  background-color: inherit;
-  list-style: none;
-  border: none;
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item a {
@@ -19,4 +31,8 @@
   line-height: $line-height-20;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
