@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $basic-grey;
+  position: relative;
 }
 
 .page-footer__footer {
@@ -42,7 +43,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    margin-top: 100px;
+    top: 100px;
+    left: 110px;
   }
 }
 
