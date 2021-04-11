@@ -21,6 +21,8 @@
 
 .page-footer__dealers {
   background-color: $basic-white;
+  width: 280px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -33,7 +35,7 @@
   }
 }
 
-.page-footer__wrapper {
+.page-footer__contacts {
   background-color: $basic-white;
   display: flex;
   justify-content: space-between;

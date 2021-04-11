@@ -18,8 +18,6 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    list-style: none;
-    padding-left: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

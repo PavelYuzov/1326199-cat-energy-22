@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     position: relative;
+    margin-bottom: 250px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,22 +36,21 @@
   }
 }
 
-.sentence__wrapper .button {
+.sentence__wrapper img {
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 0;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
   }
 
-  @media (min-width: $desktop-width) {
-    position: static;
-    margin-right: auto;
-  }
-}
-
-.sentence__wrapper img {
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 400px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 }
 
