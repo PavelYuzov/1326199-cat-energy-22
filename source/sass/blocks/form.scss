@@ -1,6 +1,107 @@
+.form {
+  width: 280;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
 .form__fieldset {
   border: none;
   padding: 0;
+}
+
+.form__fieldset--data {
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form__fieldset--nutrition {
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.form__fieldset--comment {
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.form-fieldset--additional {
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__wrapper--contacts {
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.form__inner {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .form__label {
@@ -8,10 +109,12 @@
   font-size: $font-size-16;
   line-height: $line-height-18;
   text-transform: uppercase;
+  display: flex;
 }
 
 .form__input {
   border: 1px solid $placeholder-grey;
+  width: 100%;
 
   &::placeholder {
     color: $copiryght-grey;
@@ -19,6 +122,14 @@
     line-height: $line-height-18;
     text-transform: uppercase;
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -45,6 +156,14 @@
     text-transform: uppercase;
     opacity: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .form__checkbox-label {
@@ -54,6 +173,13 @@
   text-transform: uppercase;
 }
 
+.form__wrapper-button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: 100px;
+  }
+}
+
 .form__button {
   color: $basic-white;
   background-color: $basic-green;
@@ -61,6 +187,11 @@
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .form__text {
@@ -68,4 +199,17 @@
   color: $basic-black;
   font-size: $font-size-14;
   line-height: $line-height-16;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.form__radio-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
