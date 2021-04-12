@@ -1,5 +1,5 @@
 .form {
-  width: 280;
+  width: 280px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -22,8 +22,6 @@
 
 .form__fieldset--data {
   @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -33,8 +31,6 @@
 
 .form__fieldset--nutrition {
   @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -44,8 +40,6 @@
 
 .form__fieldset--contacts {
   @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -55,8 +49,6 @@
 
 .form__fieldset--comment {
   @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -66,8 +58,6 @@
 
 .form-fieldset--additional {
   @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -92,7 +82,7 @@
   }
 }
 
-.form__inner {
+.form__input-wrapper {
   display: block;
 
   @media (min-width: $tablet-width) {
