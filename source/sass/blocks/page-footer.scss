@@ -41,8 +41,6 @@
 
 .page-footer__contacts--inner-page {
   background-color: $basic-grey;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;

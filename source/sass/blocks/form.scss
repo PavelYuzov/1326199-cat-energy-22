@@ -30,15 +30,26 @@
 }
 
 .form__fieldset--nutrition {
+  margin-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: auto 0 auto 50px;
   }
 }
 
 .form__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -48,6 +59,12 @@
 }
 
 .form__fieldset--comment {
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -57,6 +74,8 @@
 }
 
 .form-fieldset--additional {
+  margin-top: 23px;
+
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -73,8 +92,6 @@
 }
 
 .form__wrapper--contacts {
-  width: 280px;
-
   @media (min-width: $desktop-width) {
     width: 100%;
     display: grid;
@@ -83,10 +100,26 @@
 }
 
 .form__input-wrapper {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 60%;
+  }
+}
+
+.form__input-wrapper:last-child {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__input-wrapper-radio {
+  @media (min-width: $tablet-width) {
+    width: 45%;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,11 +133,15 @@
   line-height: $line-height-18;
   text-transform: uppercase;
   display: flex;
+  align-items: center;
+  margin-bottom: 13px;
 }
 
 .form__input {
   border: 1px solid $placeholder-grey;
-  width: 100%;
+  flex-grow: 1;
+  margin-left: 13px;
+  padding: 13px 0 10px 14px;
 
   &::placeholder {
     color: $copiryght-grey;
@@ -123,21 +160,34 @@
   }
 }
 
+.form__radio-input {
+  @media (min-width: $tablet-width) {
+    margin-left: 29px;
+  }
+}
+
 .form__radio-label {
   color: $label-radio-black;
   font-size: $font-size-16;
   line-height: $line-height-18;
   text-transform: uppercase;
+  margin-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .form__title {
   color: $basic-black;
   font-size: $font-size-24;
   line-height: $line-height-26;
+  margin-bottom: 35px;
 }
 
 .form__textarea {
   border: 1px solid $placeholder-grey;
+  width: 100%;
 
   &::placeholder {
     color: $copiryght-grey;
@@ -145,8 +195,25 @@
     line-height: $line-height-18;
     text-transform: uppercase;
     opacity: 1;
+    text-align: center;
+    padding-top: 9px;
   }
 
+  @media (min-width: $tablet-width) {
+    width: auto;
+
+    &::placeholder {
+      text-align: left;
+      padding-left: 19px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.form__wrapper--comment {
   @media (min-width: $tablet-width) {
     margin-right: 36px;
   }
@@ -161,12 +228,24 @@
   font-size: $font-size-16;
   line-height: $line-height-18;
   text-transform: uppercase;
+  margin-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 100px;
+    margin-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 96px;
+  }
 }
 
 .form__wrapper-button {
   @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
-    margin-right: 100px;
+    margin: 54px 0 72px 0;
   }
 }
 
@@ -180,7 +259,21 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+  }
+}
+
+.form__input--mail {
+  flex-grow: 1;
+}
+
+.form__wrapper--contacts .form__label:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
   }
 }
 
@@ -190,16 +283,20 @@
   font-size: $font-size-14;
   line-height: $line-height-16;
   text-align: center;
+  margin: 21px 0 32px 0;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 40%;
   }
 }
 
 .form__radio-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
