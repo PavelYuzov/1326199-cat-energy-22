@@ -18,6 +18,14 @@
 .form__fieldset {
   border: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .form__fieldset--data {
@@ -245,6 +253,10 @@
     grid-column-start: 1;
     grid-column-end: 3;
     display: flex;
+    margin: 54px 40px 72px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 54px 0 72px 0;
   }
 }
@@ -259,7 +271,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 38%;
   }
 
   @media (min-width: $desktop-width) {

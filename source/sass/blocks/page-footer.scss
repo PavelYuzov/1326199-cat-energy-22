@@ -42,8 +42,15 @@
 .page-footer__contacts--inner-page {
   background-color: $basic-grey;
 
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding: 0 70px;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
+    width: 40%;
+    padding: 0;
   }
 }
 
