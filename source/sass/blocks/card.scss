@@ -1,9 +1,50 @@
+.card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 324px;
+    background-color: $basic-grey;
+    position: relative;
+    margin-top: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .card__title {
   color: $label-radio-black;
   font-weight: $font-weight;
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
+  margin-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: $line-height-24;
+    margin: 0 auto;
+    padding-top: 161px;
+    padding-bottom: 21px;
+    width: 154px;
+  }
+}
+
+.card__info {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    margin: 0 auto;
+  }
 }
 
 .card-table__line {
@@ -11,4 +52,90 @@
   color: $copiryght-grey;
   font-size: $font-size-12;
   line-height: $line-height-16;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+  }
+}
+
+.card__picture {
+  margin: auto auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+  }
+}
+
+.card-table {
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.card-table__cell:first-child {
+  float: left;
+}
+
+.card-table__cell:last-child {
+  float: right;
+}
+
+.card-more {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-more__title {
+  @media (min-width: $tablet-width) {
+    padding: 241px 94px 23px 96px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 240px 55px 23px 55px;
+  }
+}
+
+.card-more__text {
+  @media (min-width: $tablet-width) {
+    padding: 0 78px 61px 79px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px 81px 39px;
+  }
+}
+
+.card-more .button--more {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.card .button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 13px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    margin: 33px auto 40px auto;
+  }
 }
