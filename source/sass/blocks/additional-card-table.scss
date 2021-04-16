@@ -1,3 +1,25 @@
+
+.additional-card-table {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 287px;
+  }
+}
+
+.additional-card-table__cell:first-child {
+  float: left;
+}
+
+.additional-card-table__cell:last-child {
+  float: right;
+}
+
 .additional-card-table__line {
   font-family: $font-family-arial;
   color: $copiryght-grey;

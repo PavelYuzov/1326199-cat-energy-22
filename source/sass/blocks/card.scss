@@ -1,14 +1,81 @@
+.card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 324px;
+    background-color: $basic-grey;
+    position: relative;
+    margin-top: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .card__title {
   color: $label-radio-black;
   font-weight: $font-weight;
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
+  margin-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: $line-height-24;
+    margin: 0 auto;
+    padding-top: 161px;
+    padding-bottom: 21px;
+    width: 154px;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: $line-height-21;
+  }
 }
 
-.card-table__line {
-  font-family: $font-family-arial;
-  color: $copiryght-grey;
-  font-size: $font-size-12;
-  line-height: $line-height-16;
+.card__info {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
+}
+
+.card__picture {
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+  }
+}
+
+.card .button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 13px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    margin: 33px auto 40px auto;
+  }
 }

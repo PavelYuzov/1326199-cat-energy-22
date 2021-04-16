@@ -4,6 +4,15 @@
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 241px 94px 23px 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 240px 55px 23px 55px;
+  }
 }
 
 .card-more__text {
@@ -11,4 +20,29 @@
   color: $copiryght-grey;
   font-size: $font-size-12;
   line-height: $line-height-16;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 78px 61px 79px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px 76px 39px;
+  }
+}
+
+.card-more {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-more .button--more {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
