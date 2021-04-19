@@ -218,10 +218,80 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0 0 0 33px;
+  }
 }
 
 .example__slider-cat-fat {
   width: 100%;
+}
+
+.example__slider-switch {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $border-grey;
+  border-radius: 6px;
+  margin: auto 0;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-line;
+    width: 428px;
+    height: 6px;
+    border: none;
+    position: relative;
+  }
+}
+
+.example__slider-pin {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  margin: 4px 0 0 5px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: $basic-white;
+    border: 1px solid $border-grey;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px $shadow-pin;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
+  }
+}
+
+.example__slider-pin::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-color: $basic-green;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.example__slider-pin--make {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  margin: 4px 0 0 43px;
 }
 
 .example__slider-button {
@@ -232,4 +302,10 @@
   text-transform: uppercase;
   list-style: none;
   border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $grey-dotted;
+    padding-bottom: 3px;
+  }
 }

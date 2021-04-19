@@ -64,11 +64,12 @@
     font-size: $font-size-16;
     line-height: $line-height-24;
     margin: 0;
-    padding: 151px 5px 50px 0;
+    position: relative;
+    width: 250px;
+    padding: 111px 0 44px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 250px;
     padding: 151px 0 44px 0;
   }
 }
@@ -82,53 +83,47 @@
 }
 
 @media (min-width: $tablet-width) {
-  .originality__item--text:nth-child(1) {
-    background-image: url("../img/content/one.svg");
-    background-repeat: no-repeat;
-    background-position: 127px 44px;
+  .originality__item:nth-child(1)::after {
+    position: absolute;
+    z-index: -1;
+    content: "1";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 119px;
   }
 
-  .originality__item--text:nth-child(2) {
-    background-image: url("../img/content/two.svg");
-    background-repeat: no-repeat;
-    background-position: 120px 44px;
+  .originality__item:nth-child(2)::after {
+    position: absolute;
+    z-index: -1;
+    content: "2";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 107px;
   }
 
-  .originality__item--text:nth-child(3) {
-    background-image: url("../img/content/tree.svg");
-    background-repeat: no-repeat;
-    background-position: 122px 35px;
+  .originality__item:nth-child(3)::after {
+    position: absolute;
+    z-index: -1;
+    content: "3";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 113px;
   }
 
-  .originality__item--text:nth-child(4) {
-    background-image: url("../img/content/four.svg");
-    background-repeat: no-repeat;
-    background-position: 125px 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .originality__item--text:nth-child(1) {
-    background-image: url("../img/content/one.svg");
-    background-repeat: no-repeat;
-    background-position: 127px 44px;
-  }
-
-  .originality__item--text:nth-child(2) {
-    background-image: url("../img/content/two.svg");
-    background-repeat: no-repeat;
-    background-position: 125px 35px;
-  }
-
-  .originality__item--text:nth-child(3) {
-    background-image: url("../img/content/tree.svg");
-    background-repeat: no-repeat;
-    background-position: 122px 35px;
-  }
-
-  .originality__item--text:nth-child(4) {
-    background-image: url("../img/content/four.svg");
-    background-repeat: no-repeat;
-    background-position: 125px 37px;
+  .originality__item:nth-child(4)::after {
+    position: absolute;
+    z-index: -1;
+    content: "4";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 113px;
   }
 }

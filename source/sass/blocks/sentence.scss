@@ -40,8 +40,8 @@
 .sentence__wrapper img {
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -70%;
-    left: 50%;
+    top: 265px;
+    left: 330px;
     transform: translateX(-50%);
     z-index: -1;
     padding: 0 0 3px 0;
@@ -50,8 +50,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 141px;
-    left: 58%;
-    transform: translateX(-42%);
+    left: 50%;
+    transform: translateX(-130px);
     z-index: 1;
     width: 552px;
     height: 499px;
