@@ -5,11 +5,13 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
+    border-bottom: 1px solid $line-grey;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
+    border: none;
   }
 }
 
@@ -19,12 +21,17 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 250px 250px;
+    column-gap: 150px;
+    row-gap: 37px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
   }
 }
 
@@ -33,10 +40,16 @@
   font-weight: $font-weight;
   font-size: $font-size-36;
   line-height: $line-height-40;
+  margin: 27px 0 38px 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-60;
     line-height: $line-height-60;
+    margin: 45px 0 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 71px 0 72px 0;
   }
 }
 
@@ -45,11 +58,72 @@
   color: $copiryght-grey;
   font-size: $font-size-14;
   line-height: $line-height-18;
-  margin-left: 80px;
+  margin: 0 0 24px 80px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-16;
     line-height: $line-height-24;
-    margin-left: 0;
+    margin: 0;
+    position: relative;
+    width: 250px;
+    padding: 111px 0 44px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 151px 0 44px 0;
+  }
+}
+
+.originality__item br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .originality__item:nth-child(1)::after {
+    position: absolute;
+    z-index: -1;
+    content: "1";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 119px;
+  }
+
+  .originality__item:nth-child(2)::after {
+    position: absolute;
+    z-index: -1;
+    content: "2";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 107px;
+  }
+
+  .originality__item:nth-child(3)::after {
+    position: absolute;
+    z-index: -1;
+    content: "3";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 113px;
+  }
+
+  .originality__item:nth-child(4)::after {
+    position: absolute;
+    z-index: -1;
+    content: "4";
+    font-family: $font-family-oswald;
+    color: $basic-grey;
+    font-size: $font-size-280;
+    bottom: 114px;
+    left: 113px;
   }
 }

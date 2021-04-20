@@ -11,6 +11,12 @@ $title-black: rgb(17, 17, 17);
 $line-grey: rgb(230, 230, 230);
 $placeholder-grey: rgb(231, 231, 231);
 $label-radio-black: rgb(34, 34, 34);
+$border-grey-line: rgb(217, 217, 217);
+$border-grey: rgb(205, 205, 205);
+$grey-line: rgb(220, 220, 220);
+$grey-dotted: rgb(178, 178, 178);
+$shadow-pin: rgba(0, 0, 0, 0.16);
+
 
 // Fonts
 
@@ -20,15 +26,18 @@ $font-family-arial: "Arial", "Calibri", sans-serif;
 $font-weight: normal;
 $font-style: normal;
 
+$font-size-280: 280px;
 $font-size-60: 60px;
 $font-size-30: 30px;
 $font-size-36: 36px;
 $font-size-24: 24px;
 $font-size-20: 20px;
+$font-size-18: 18px;
 $font-size-16: 16px;
 $font-size-14: 14px;
 $font-size-12: 12px;
 
+$line-height-280: 280px;
 $line-height-60: 60px;
 $line-height-40: 40px;
 $line-height-37: 37px;
