@@ -68,7 +68,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-20;
     line-height: $line-height-21;
-    margin: 66px 0 51px 41px;
+    margin: 66px 0 51px 0;
     width: 155px;
   }
 
@@ -127,6 +127,14 @@
   margin: 39px 0 32px 0;
 }
 
+.page-footer__logo:hover img {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active img {
+  opacity: 0.6;
+}
+
 .page-footer__social-wrapper {
   border-top: 1px solid $border-grey-line;
   border-bottom: 1px solid $border-grey-line;
@@ -147,7 +155,7 @@
   margin: 0 77px 0 73px;
 
   @media (min-width: $tablet-width) {
-    gap: 27px;
+    column-gap: 27px;
     margin: 0;
     padding: 0;
   }
@@ -166,8 +174,29 @@
   }
 }
 
-.page-footer__social-link {
-  fill: $social-grey;
+.page-footer__link-copyright:hover .page-footer__academy-logo {
+  stroke: $basic-green;
+}
+
+.page-footer__link-copyright:active .page-footer__academy-logo {
+  stroke: $basic-green;
+  fill: $basic-green;
+  opacity: 0.3;
+}
+
+.page-footer__link-copyright:active .page-footer__academy-text {
+  opacity: 0.3;
+}
+
+.page-footer__social-link:hover svg {
+  stroke: $basic-green;
+  fill: $basic-green;
+}
+
+.page-footer__social-link:active svg {
+  stroke: $basic-green;
+  fill: $basic-green;
+  opacity: 0.3;
 }
 
 .page-footer__academy-text {

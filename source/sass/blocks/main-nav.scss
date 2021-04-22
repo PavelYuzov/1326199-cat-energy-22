@@ -35,11 +35,11 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-    margin: 42px 0 5px 0;
+    margin: 62px 0 5px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 69px 0 0 0;
+    margin: 70px 0 4px 0;
   }
 }
 
@@ -80,5 +80,30 @@
     font-size: $font-size-20;
     line-height: $line-height-30;
     color: $basic-white;
+  }
+}
+
+.main-nav__item--visit a {
+  @media (min-width: $tablet-width) {
+    padding: 0 0 8px 0;
+    border-bottom: 2px solid $border-green;
+  }
+}
+
+.main-nav__item--page a {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+  }
+}
+
+.main-nav__item:hover a {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__item:active a {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
   }
 }

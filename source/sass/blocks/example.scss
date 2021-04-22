@@ -8,7 +8,6 @@
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -271,6 +270,15 @@
     left: 50%;
     transform: translateY(-60%) translateX(-50%);
   }
+}
+
+.example__slider-pin--before {
+  position: absolute;
+}
+
+.example__slider-pin--after {
+  position: absolute;
+  margin: 4px 0 0 43px;
 }
 
 .example__slider-pin::before {
