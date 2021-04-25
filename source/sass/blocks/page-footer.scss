@@ -162,83 +162,62 @@
 }
 
 .page-footer__link-copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  padding: 22px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0;
-    gap: 20px;
-  }
-}
-
-.page-footer__social-item:nth-child(1) {
-  .page-footer__social-link:hover path {
-    fill: $border-green;
-  }
-}
-
-.page-footer__social-item:nth-child(2) {
-  .page-footer__social-link:hover path {
-    fill: $border-green;
-  }
-}
-
-.page-footer__social-item:nth-child(3) {
-  .page-footer__social-link:hover path {
-    stroke: $border-green;
-  }
-}
-
-.page-footer__social-item:nth-child(1):active {
-  .page-footer__social-link path {
-    fill: $border-green;
-    opacity: 0.3;
-  }
-}
-
-.page-footer__social-item:nth-child(2):active {
-  .page-footer__social-link path {
-    fill: $border-green;
-    opacity: 0.3;
-  }
-}
-
-.page-footer__social-item:nth-child(3):active {
-  .page-footer__social-link path {
-    stroke: $border-green;
-    opacity: 0.3;
-  }
-}
-
-.page-footer__link-copyright:hover {
-  .page-footer__academy-logo path {
-    fill: $border-green;
-  }
-}
-
-.page-footer__link-copyright:active {
-  .page-footer__academy-logo path {
-    fill: $border-green;
-    opacity: 0.3;
-  }
-}
-
-.page-footer__academy-text {
   color: $copiryght-grey;
   font-size: $font-size-16;
   line-height: $line-height-18;
+  text-decoration: none;
+  margin: 28px 0 32px 0;
 
   @media (min-width: $tablet-width) {
     font-family: $font-family-arial;
-    margin: auto 0;
   }
 }
 
+.page-footer__academy-logo {
+  margin: auto 0;
+}
+
 .page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     margin: auto 0;
+    column-gap: 22px;
   }
+}
+
+.page-footer__social-link:hover path {
+  fill: $border-green;
+}
+
+.page-footer__social-link:active path {
+  fill: $border-green;
+  opacity: 0.3;
+}
+
+.page-footer__social-link--facebook:hover path {
+  fill: none;
+  stroke: $border-green;
+}
+
+.page-footer__social-link--facebook:active path {
+  fill: none;
+  stroke: $border-green;
+  opacity: 0.3;
+}
+
+.page-footer__academy-logo:hover path {
+  fill: $border-green;
+  cursor: pointer;
+}
+
+.page-footer__academy-logo:active path {
+  fill: $border-green;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.page-footer__link-copyright:active {
+  opacity: 0.3;
 }

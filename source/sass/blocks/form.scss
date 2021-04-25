@@ -5,7 +5,6 @@
 
 .form__fieldset {
   margin: 0;
-  list-style: 0;
   border: 0;
   width: 280px;
   padding: 0 20px;
@@ -204,7 +203,7 @@
     margin: 0 0 20px 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 20px 0;
   }
 }
@@ -274,20 +273,20 @@
 }
 
 .form__input:focus {
-  border-color: $copiryght-grey;
-  border-width: 2px;
-  outline: none;
-  margin: -1px 0 -1px 12px;
+  outline-color: $copiryght-grey;
+  outline-width: 2px;
+  margin: 0 0 0 12px;
 
   @media (min-width: $tablet-width) {
-    margin: -1px 0 -1px 19px;
+    margin: 0 0 0 19px;
   }
 }
 
 .form__textarea {
   border: 1px solid $placeholder-grey;
-  width: 100%;
-  padding: 9px 0 0 0;
+  width: 254px;
+  resize: none;
+  padding: 9px 12px 9px 12px;
 
   &::placeholder {
     color: $copiryght-grey;
@@ -295,11 +294,11 @@
     line-height: $line-height-18;
     text-transform: uppercase;
     opacity: 1;
-    text-align: center;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 0 19px;
+    width: 590px;
+    padding: 10px 19px 10px 19px;
 
     &::placeholder {
       font-size: $font-size-20;
@@ -308,10 +307,19 @@
       text-align: left;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1182px;
+  }
 }
 
 .form__textarea:hover {
   border-color: $border-grey;
+}
+
+.form__textarea:focus {
+  outline-color: $copiryght-grey;
+  outline-width: 2px;
 }
 
 .form__radio-label {
