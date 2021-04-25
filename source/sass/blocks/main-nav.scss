@@ -83,10 +83,11 @@
   }
 }
 
-.main-nav__item--visit a {
+.main-nav__item--active a {
   @media (min-width: $tablet-width) {
     padding: 0 0 8px 0;
     border-bottom: 2px solid $border-green;
+    cursor: default;
   }
 }
 
@@ -96,13 +97,13 @@
   }
 }
 
-.main-nav__item:hover a {
+.main-nav__item:not(.main-nav__item--active) a:hover {
   @media (min-width: $tablet-width) {
     opacity: 0.6;
   }
 }
 
-.main-nav__item:active a {
+.main-nav__item:not(.main-nav__item--active) a:active {
   @media (min-width: $tablet-width) {
     opacity: 0.3;
   }
