@@ -22,18 +22,18 @@
   font-weight: $font-weight;
   font-size: $font-size-36;
   line-height: $line-height-36;
+  margin: 27px 0 37px 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-60;
     line-height: $line-height-60;
-    margin-bottom: 54px;
+    margin: 65px 0 54px 40px;
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 134px;
-    margin-left: 0;
+    margin: 187px 0 0 0;
     grid-column-start: 1;
     grid-column-end: 5;
   }
@@ -46,18 +46,17 @@
   line-height: $line-height-18;
   text-transform: uppercase;
   width: 85%;
-  margin-bottom: 39px;
+  margin: 0 0 39px 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-20;
     line-height: $line-height-30;
     width: 323px;
-    margin-left: 40px;
-    margin-bottom: 66px;
+    margin: 0 0 66px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 56px 0 66px 0;
   }
 }
 
