@@ -62,7 +62,7 @@
   }
 }
 
-.form-fieldset--additional .form__title {
+.form__fieldset--additional .form__title {
   @media (min-width: $tablet-width) {
     margin: 0 0 65px 0;
   }
@@ -110,7 +110,7 @@
   }
 }
 
-.form-fieldset--additional {
+.form__fieldset--additional {
   margin: 0 0 34px 0;
 
   @media (min-width: $tablet-width) {
@@ -275,11 +275,6 @@
 .form__input:focus {
   outline-color: $copiryght-grey;
   outline-width: 2px;
-  margin: 0 0 0 12px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 0 19px;
-  }
 }
 
 .form__textarea {
