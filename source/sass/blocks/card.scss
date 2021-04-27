@@ -1,6 +1,10 @@
 .card {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 112px 40px;
+  row-gap: 23px;
+  margin: 0 0 50px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,20 +21,33 @@
   }
 }
 
+.card--line::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid $border-card;
+  width: 100vw;
+  top: 205px;
+  left: 0;
+  margin-left: calc(50% - 50vw);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .card__title {
   color: $label-radio-black;
   font-weight: $font-weight;
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin: 0 40px 18px 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-20;
     line-height: $line-height-24;
     margin: 0 auto;
-    padding-top: 161px;
-    padding-bottom: 21px;
+    padding: 161px 0 21px 0;
     width: 154px;
   }
 
@@ -39,7 +56,31 @@
   }
 }
 
+.card-table {
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.card-table__cell {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 0 6px 0;
+  }
+}
+
+.card-table__line {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-grey;
+  }
+}
+
 .card__info {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   @media (min-width: $tablet-width) {
     width: 247px;
     margin: 0 auto;
@@ -51,6 +92,10 @@
 }
 
 .card__picture {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
   margin: auto;
 
   @media (min-width: $tablet-width) {
@@ -64,18 +109,17 @@
 .card .button {
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-top: 13px;
-  margin-bottom: 14px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
-    margin: 33px auto 40px auto;
+    margin: 28px auto 40px auto;
   }
 }

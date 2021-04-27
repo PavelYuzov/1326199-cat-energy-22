@@ -27,13 +27,13 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-60;
     line-height: $line-height-60;
-    margin: 65px 0 54px 40px;
+    margin: 65px 0 54px 0;
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 187px 0 0 0;
+    margin: 187px 0 84px 0;
     grid-column-start: 1;
     grid-column-end: 5;
   }
@@ -68,8 +68,8 @@
     width: 708px;
     padding: 0 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
