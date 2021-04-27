@@ -5,23 +5,23 @@
   margin: 0 0 50px 0;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $border-card;
+    width: 100vw;
+    top: 205px;
+    left: 0;
+    margin-left: calc(50% - 50vw);
+  }
+
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
     margin: 81px 0 50px 0;
-  }
-}
 
-.card-more--line::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid $border-card;
-  width: 100vw;
-  top: 205px;
-  left: 0;
-  margin-left: calc(50% - 50vw);
-
-  @media (min-width: $tablet-width) {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 }
 

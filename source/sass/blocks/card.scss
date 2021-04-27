@@ -6,32 +6,31 @@
   margin: 0 0 50px 0;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $border-card;
+    width: 100vw;
+    top: 205px;
+    left: 0;
+    margin-left: calc(50% - 50vw);
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 324px;
     background-color: $basic-grey;
-    position: relative;
     margin-top: 81px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-  }
-}
-
-.card--line::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid $border-card;
-  width: 100vw;
-  top: 205px;
-  left: 0;
-  margin-left: calc(50% - 50vw);
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 
