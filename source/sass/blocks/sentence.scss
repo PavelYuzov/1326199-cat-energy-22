@@ -1,13 +1,13 @@
 .sentence {
   width: 280px;
   padding: 0 20px;
-  background-image: url("../img/content/background-picture-green.png");
+  background-image: url("../img/content/background-picture-green-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/content/background-picture-green@2x.png");
+    background-image: url("../img/content/background-picture-green-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
-    background-image: url("../img/content/background-picture-green.png");
+    background-image: url("../img/content/background-picture-green-desktop.png");
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: top right;
@@ -28,18 +28,9 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/content/background-picture-green@2x.png");
+      background-image: url("../img/content/background-picture-green-desktop@2x.png");
     }
   }
-}
-
-.sentence::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/content/index-background-desktop.png");
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
 }
 
 .sentence__wrapper {
