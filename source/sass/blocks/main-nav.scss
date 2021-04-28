@@ -34,12 +34,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 440px;
-    margin: 62px 0 5px 0;
+    width: auto;
+    column-gap: 37px;
+    margin: 58px 0 12px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 70px 0 4px 0;
+    margin: 70px 0 12px 0;
   }
 }
 
@@ -88,11 +89,15 @@
     border-bottom: 2px solid $border-green;
     cursor: default;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+  }
 }
 
 .main-nav__item--page a {
   @media (min-width: $desktop-width) {
-    color: $basic-black;
+    color: $basic-white;
   }
 }
 

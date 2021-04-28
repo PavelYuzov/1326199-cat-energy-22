@@ -59,6 +59,7 @@
   font-size: $font-size-14;
   line-height: $line-height-18;
   margin: 0 0 24px 80px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-16;
@@ -72,6 +73,45 @@
   @media (min-width: $desktop-width) {
     padding: 151px 0 44px 0;
   }
+}
+
+.originality__item::before {
+  content: "";
+  position: absolute;
+  background-color: $basic-green;
+  background-image: url("../img/icon/icon-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+  }
+}
+
+.originality__item:nth-child(2)::before {
+  background-image: url("../img/icon/icon-tub.svg");
+}
+
+.originality__item:nth-child(3)::before {
+  background-image: url("../img/icon/icon-eat.svg");
+}
+
+.originality__item:nth-child(4)::before {
+  background-image: url("../img/icon/icon-alarm.svg");
 }
 
 .originality__item br {
