@@ -79,11 +79,13 @@
 .originality__item::before {
   content: "";
   position: absolute;
-  background-color: $basic-green;
   width: 60px;
   height: 60px;
   top: 0;
   left: -80px;
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -101,35 +103,19 @@
 }
 
 .originality__item--icon-leaf::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/icon/icon-leaf.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .originality__item--icon-tub::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/icon/icon-tub.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .originality__item--icon-eat::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/icon/icon-eat.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .originality__item--icon-alarm::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/icon/icon-alarm.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .originality__item br {
