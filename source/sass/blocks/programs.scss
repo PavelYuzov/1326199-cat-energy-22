@@ -76,55 +76,54 @@
   }
 }
 
-.programs__item-title--slim::after {
+.programs__item-title::after {
   content: "";
   position: absolute;
-  background-image: url("../img/icon/cat-slim.svg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
+}
+
+.programs__item-title--slim::after {
   top: -9px;
   left: 8px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../img/icon/cat-slim.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: 140px 192px;
-    width: 140px;
-    height: 192px;
     top: 0;
     left: 425px;
+    width: 140px;
+    height: 192px;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 70px 97px;
     top: -6px;
     left: 15px;
+    width: 70px;
+    height: 97px;
   }
 }
 
 .programs__item-title--pro::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon/cat-pro.svg");
-  background-repeat: no-repeat;
-  background-size: 67px 28px;
-  width: 67px;
-  height: 28px;
   top: 4px;
   left: -10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon/cat-pro.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: 268px 112px;
-    width: 268px;
-    height: 112px;
     top: 55px;
     left: 357px;
+    width: 268px;
+    height: 112px;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 134px 100px;
-    top: 0;
+    top: 22px;
     left: -18px;
+    width: 134px;
+    height: 100px;
   }
 }
 
