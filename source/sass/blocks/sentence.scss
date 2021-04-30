@@ -39,13 +39,13 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     position: relative;
-    margin-bottom: 250px;
+    margin: 0 0 250px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 82px;
+    margin: 0 0 82px 0;
   }
 }
 

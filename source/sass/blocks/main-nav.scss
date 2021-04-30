@@ -1,5 +1,6 @@
 .main-nav {
   background-color: $basic-white;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -7,21 +8,25 @@
   }
 }
 
-.main-nav--close {
-  display: none;
+.main-nav--close .main-nav__list {
+  display: block;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    column-gap: 37px;
+    margin: 42px 0 12px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 70px 0 12px 0;
   }
 }
 
 .main-nav__wrapper {
   display: flex;
   flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
 }
 
 .main-nav__list {
@@ -30,23 +35,11 @@
   width: 280px;
   margin: 0;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    column-gap: 37px;
-    margin: 58px 0 12px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 70px 0 12px 0;
-  }
 }
 
 .main-nav__item {
   padding: 22px 0 24px 0;
-  border-top: 1px solid $line-grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -54,10 +47,22 @@
   }
 }
 
+.main-nav__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-top: 1px solid $line-grey;
+  margin-left: calc(50% - 50vw);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-nav__item:last-child {
   padding: 22px 0 24px 0;
-  border-top: 1px solid $line-grey;
-  border-bottom: 1px solid $line-grey;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -84,9 +89,10 @@
 }
 
 .main-nav__item--active a {
+  border-bottom: 2px solid $border-green;
+
   @media (min-width: $tablet-width) {
     padding: 0 0 8px 0;
-    border-bottom: 2px solid $border-green;
     cursor: default;
   }
 
@@ -102,13 +108,57 @@
 }
 
 .main-nav__item:not(.main-nav__item--active) a:hover {
-  @media (min-width: $tablet-width) {
-    opacity: 0.6;
-  }
+  opacity: 0.6;
 }
 
 .main-nav__item:not(.main-nav__item--active) a:active {
+  opacity: 0.3;
+}
+
+.main-nav__button {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -30px;
+  right: 0;
+  border: none;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  margin: auto 0;
+  background-color: inherit;
+
   @media (min-width: $tablet-width) {
-    opacity: 0.3;
+    display: none;
   }
+}
+
+.main-nav--close .main-nav__button {
+  top: 10px;
+}
+
+.main-nav--open .main-nav__button {
+  top: -47px;
+}
+
+.main-nav__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  box-shadow: 0 2px 0 0 #000000, 0 10px 0 0 #000000, 0 18px 0 0 #000000;
+}
+
+.main-nav--close .main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav--open .main-nav__wrapper {
+  display: block;
 }
