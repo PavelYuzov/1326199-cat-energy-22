@@ -1,23 +1,35 @@
 .sentence {
   width: 280px;
   padding: 0 20px;
-  background-image: url("../img/content/background-picture-green.png");
+  background-image: url("../img/content/background-picture-green-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/background-picture-green-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
     background-image: none;
+    margin: 0 0 540px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
-    background-image: url("../img/content/background-picture-green.png");
+    background-image: url("../img/content/background-picture-green-desktop.png");
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: top right;
+    margin: 0;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/background-picture-green-desktop@2x.png");
+    }
   }
 }
 
@@ -40,8 +52,8 @@
 .sentence__wrapper img {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 265px;
-    left: 330px;
+    top: 270px;
+    left: 320px;
     transform: translateX(-50%);
     z-index: -1;
     padding: 0 0 3px 0;
@@ -50,7 +62,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 141px;
-    left: 50%;
+    left: 578px;
     transform: translateX(-130px);
     z-index: 1;
     width: 552px;
@@ -115,7 +127,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 0 0 0 87px;
+    margin: 20px 0 0 87px;
   }
 
   @media (min-width: $desktop-width) {
