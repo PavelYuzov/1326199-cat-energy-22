@@ -9,6 +9,7 @@
     <link rel="img/favicons/apple-touch-icon" href="apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/style.js">
   </head>
   <body class="page-body">
     <h1 class="visually-hidden">Интернет магазин Кэт энерджи</h1>
@@ -21,25 +22,23 @@
             <img src="img/logo/header-logo-mobile.svg" alt="Логотип компании Кэт энерджи">
           </picture>
         </a>
-        <nav class="main-nav main-nav--close main-nav--nojs">
-          <button class="main-nav__button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list main-nav__item--page">
-              <li class="main-nav__item main-nav__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <button class="page-header__button page-header__button--nojs page-header__button--burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <ul class="main-nav__list main-nav__item--page">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
       <h2 class="visually-hidden">Программы питания для кошек</h2>
@@ -173,21 +172,6 @@
         </div>
       </section>
     </footer>
-    <script>
-      var nav = document.querySelector('.main-nav');
-      var button = document.querySelector('.main-nav__button');
-
-      nav.classList.remove('main-nav--nojs');
-
-      button.addEventListener('click', function() {
-        if (nav.classList.contains('main-nav--close')) {
-          nav.classList.remove('main-nav--close');
-          nav.classList.add('main-nav--open');
-        } else {
-          nav.classList.add('main-nav--close');
-          nav.classList.remove('main-nav--open');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
