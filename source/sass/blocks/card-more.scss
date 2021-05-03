@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
-    margin: 81px 0 50px 0;
+    margin: 100px 0 50px 0;
 
     &::after {
       display: none;
@@ -36,11 +36,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 161px 96px 23px 94px;
+    padding: 161px 96px 42px 94px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 160px 55px 23px 55px;
+    padding: 160px 55px 0 55px;
   }
 }
 

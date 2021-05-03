@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-60;
     line-height: $line-height-60;
-    margin: 65px 0 54px 40px;
+    margin: 65px 0 54px 0;
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -39,6 +39,10 @@
     grid-column-start: 1;
     grid-column-end: 5;
   }
+}
+
+.page-main__cards .page-main__title {
+  padding: 0 0 0 20px;
 }
 
 .page-main__text {
@@ -63,10 +67,6 @@
 }
 
 .page-main__cards {
-  width: 280px;
-  padding: 0 20px;
-  border-top: 1px solid $line-grey;
-
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
