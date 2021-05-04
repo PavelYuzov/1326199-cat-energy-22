@@ -101,46 +101,38 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    margin: -45px auto 0 auto;
+    margin: -55px auto 5px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -55px auto 0 auto;
   }
 }
 
-.card__picture--position {
+.card__picture--small {
   @media (min-width: $tablet-width) {
-    margin: -75px auto 0 auto;
+    margin: -55px auto 8px auto;
   }
-}
 
-.card__img-small {
   @media (min-width: $desktop-width) {
-    margin: -2px 0 0 0;
+    margin: -55px auto 5px auto;
   }
 }
 
-.card__img-small--position {
-  @media (min-width: $desktop-width) {
-    margin: -3px 0 0 0;
-  }
-}
-
-.card__img-big {
+.card__picture--big {
   @media (min-width: $tablet-width) {
-    margin: -5px 0 0 0;
+    margin: -80px auto 4px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: -80px auto 3px auto;
   }
 }
 
-.card__img-big--position {
-  @media (min-width: $tablet-width) {
-    margin: 3px 0 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 6px 0 0 0;
-  }
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card .button {
