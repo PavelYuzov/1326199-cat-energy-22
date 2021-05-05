@@ -21,14 +21,16 @@
 
 .page-header__wrapper {
   width: 280px;
-  padding: 11px 20px 17px 20px;
+  padding: 11px 20px 14px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0;
+    border: none;
   }
 }
 
@@ -37,7 +39,12 @@
 
   @media (min-width: $tablet-width) {
     align-self: flex-end;
-    margin: 24px 0 0 0;
+    margin: 25px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    margin: 55px 0 0 0;
   }
 }
 

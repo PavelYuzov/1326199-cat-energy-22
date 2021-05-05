@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 112px 40px;
-  row-gap: 23px;
-  margin: 0 0 50px 0;
+  row-gap: 13px;
+  margin: 0 0 44px 0;
   position: relative;
 
   &::after {
@@ -13,7 +13,7 @@
     position: absolute;
     border-bottom: 1px solid $border-card;
     width: 100%;
-    top: 205px;
+    top: 189px;
     left: 0;
   }
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     text-align: center;
     width: 324px;
-    margin-top: 100px;
+    margin: 140px 0 0 0;
     padding: 0;
     row-gap: 0;
     background-color: $basic-grey;
@@ -33,7 +33,31 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 143px 0 0 0;
     width: 245px;
+  }
+}
+
+.card:first-of-type::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid $border-card;
+  width: 100%;
+  top: -20px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.page-main__cards .card:first-of-type {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey-opacity;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 
@@ -43,18 +67,19 @@
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
-  margin: 0 40px 18px 0;
+  margin: 1px 40px 14px 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-20;
     line-height: $line-height-24;
     margin: 0 auto;
-    padding: 34px 0 21px 0;
+    padding: 26px 0 13px 3px;
     width: 154px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     line-height: $line-height-21;
+    padding: 40px 0 18px 6px;
   }
 }
 
@@ -64,10 +89,14 @@
 }
 
 .card-table__cell {
-  padding: 0;
+  padding: 0 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 6px 0 6px 0;
+    margin: 8px 0 7px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px 0 7px 3px;
   }
 }
 
@@ -99,33 +128,32 @@
   grid-row-start: 1;
   grid-row-end: 2;
   margin: auto;
-
-  @media (min-width: $tablet-width) {
-    margin: -55px auto 5px auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: -55px auto 0 auto;
-  }
 }
 
 .card__picture--small {
+  padding: 20px 0 0 0;
+
   @media (min-width: $tablet-width) {
-    margin: -55px auto 8px auto;
+    padding: 0;
+    margin: -45px auto 8px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -55px auto 5px auto;
+    padding: 0 0 0 2px;
+    margin: -53px auto 3px auto;
   }
 }
 
 .card__picture--big {
+  padding: 10px 0 0 0;
+
   @media (min-width: $tablet-width) {
-    margin: -80px auto 4px auto;
+    padding: 0;
+    margin: -73px auto 1px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -80px auto 3px auto;
+    margin: -80px auto 1px auto;
   }
 }
 
@@ -144,11 +172,11 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 38px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
-    margin: 28px auto 40px auto;
+    margin: 33px auto 37px auto;
   }
 }
