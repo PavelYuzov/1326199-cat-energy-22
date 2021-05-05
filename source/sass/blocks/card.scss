@@ -131,7 +131,7 @@
 }
 
 .card__picture--small {
-  padding: 20px 0 0 0;
+  margin: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -149,7 +149,7 @@
 }
 
 .card__picture--big {
-  padding: 10px 0 0 0;
+  margin: 10px 0 0 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
