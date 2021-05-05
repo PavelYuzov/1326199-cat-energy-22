@@ -22,7 +22,7 @@
     flex-direction: column;
     text-align: center;
     width: 324px;
-    margin: 140px 0 0 0;
+    margin: 141px 0 0 0;
     padding: 0;
     row-gap: 0;
     background-color: $basic-grey;
@@ -73,7 +73,7 @@
     font-size: $font-size-20;
     line-height: $line-height-24;
     margin: 0 auto;
-    padding: 26px 0 13px 3px;
+    padding: 34px 0 13px 2px;
     width: 154px;
   }
 
@@ -134,13 +134,17 @@
   padding: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin: -45px auto 8px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
+    max-height: 171px;
+    margin: -64px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 2px;
-    margin: -53px auto 3px auto;
+    margin: -71px auto 3px auto;
   }
 }
 
@@ -148,12 +152,17 @@
   padding: 10px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin: -73px auto 1px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
+    max-height: 200px;
+    margin: -77px 0 -6px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -80px auto 1px auto;
+    margin: -88px 0 1px 0;
   }
 }
 
@@ -171,12 +180,12 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 248px;
-    margin: 0 auto 38px auto;
+    width: 249px;
+    margin: 0 auto 39px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
-    margin: 33px auto 37px auto;
+    margin: 33px auto 39px auto;
   }
 }

@@ -17,11 +17,15 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
-    margin: 144px 0 0 0;
+    margin: 141px 0 0 0;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 144px 0 0 0;
   }
 }
 
