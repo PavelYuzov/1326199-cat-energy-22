@@ -10,18 +10,22 @@
     position: absolute;
     border-bottom: 1px solid $border-card;
     width: 100vw;
-    top: 205px;
+    top: 188px;
     left: 0;
     margin-left: calc(50% - 50vw);
   }
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
-    margin: 81px 0 50px 0;
+    margin: 141px 0 0 0;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 144px 0 0 0;
   }
 }
 
@@ -31,16 +35,18 @@
   font-size: $font-size-16;
   line-height: $line-height-20;
   text-transform: uppercase;
-  margin: 70px 0 8px 0;
+  margin: 59px 0 8px 2px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: $line-height-22;
     margin: 0;
-    padding: 161px 96px 23px 94px;
+    padding: 159px 79px 24px 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 160px 55px 23px 55px;
+    padding: 158px 44px 24px 45px;
   }
 }
 
@@ -49,14 +55,20 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 10px;
+  top: 5px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    top: 51px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+    top: 49px;
   }
 }
 
@@ -68,16 +80,20 @@
   margin: 0 0 21px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 78px 70px 79px;
+    font-size: $font-size-16;
+    line-height: $line-height-18;
+    padding: 0 76px 87px 77px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 39px 105px 39px;
+    padding: 0 30px 86px 30px;
   }
 }
 
 .card-more .button--more {
+  margin: 0 20px;
+
   @media (min-width: $tablet-width) {
     width: 249px;
     margin: 0 auto;

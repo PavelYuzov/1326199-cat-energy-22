@@ -14,11 +14,12 @@
     display: flex;
     justify-content: space-between;
     width: auto;
-    column-gap: 37px;
+    column-gap: 35px;
     margin: 42px 0 12px 0;
   }
 
   @media (min-width: $desktop-width) {
+    column-gap: 35px;
     margin: 70px 0 12px 0;
   }
 }
