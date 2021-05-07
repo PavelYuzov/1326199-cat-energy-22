@@ -174,6 +174,7 @@
 }
 
 .page-footer__academy-logo {
+  fill: $copiryght-grey;
   margin: auto 0;
 }
 
@@ -187,32 +188,59 @@
   }
 }
 
-.page-footer__social-link:hover path {
+.page-footer__social-link svg {
+  fill: $social-grey;
+}
+
+.page-footer__social-link--vkontakte svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__social-link--instagram svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__social-link--facebook svg {
+  stroke: $social-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.page-footer__social-link:hover svg {
   fill: $border-green;
 }
 
-.page-footer__social-link:active path {
+.page-footer__social-link:active svg {
   fill: $border-green;
   opacity: 0.3;
 }
 
-.page-footer__social-link--facebook:hover path {
-  fill: none;
+.page-footer__social-link--facebook:hover svg {
+  fill: $border-green;
   stroke: $border-green;
 }
 
-.page-footer__social-link--facebook:active path {
+.page-footer__social-link--facebook:active svg {
   fill: none;
   stroke: $border-green;
   opacity: 0.3;
 }
 
-.page-footer__academy-logo:hover path {
+.page-footer__academy-logo:hover {
   fill: $border-green;
   cursor: pointer;
 }
 
-.page-footer__academy-logo:active path {
+.page-footer__academy-logo:active {
   fill: $border-green;
   opacity: 0.3;
   cursor: pointer;
